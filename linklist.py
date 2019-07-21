@@ -27,5 +27,11 @@ class linklist(object):
         count += 1
 
     def find(self,val):
-        
+        item = self.head
+        while (item != None):
+            if item.getdata() == val:
+                return item
+            else:
+                item = item.getnext()
+        return None   
 
